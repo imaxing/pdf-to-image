@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ch">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pdf to image</title>
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.14.305/build/pdf.min.js"></script>
+  </head>
+  <body>
+    <script src="dist/pdf-to-image.umd.js"></script>
+    <script>
+      window
+        .pdfToImage({
+          pdfjsLib: window.pdfjsLib,
+          url: 'https://cdn.jsdelivr.net/gh/imaxing/cdn@1.0.7/pdf/开口无模具费新建合同.pdf'
+        })
+        .then(images => {
+          console.log(images)
+        })
+    </script>
+  </body>
+</html>

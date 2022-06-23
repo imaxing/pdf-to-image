@@ -1,0 +1,24 @@
+{
+  "name": "@iamgx/pdf-to-image",
+  "version": "1.0.1",
+  "main": "dist/pdf-to-image.esm.js",
+  "module": "dist/pdf-to-image.esm.js",
+  "browser": "dist/pdf-to-image.umd.js",
+  "author": "imaxing@126.com",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.1",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "rollup": "^1.29.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "release": "npm run build && npm version patch && npm publish --access public",
+    "pretest": "npm run build"
+  },
+  "files": [
+    "dist"
+  ]
+}
