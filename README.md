@@ -14,3 +14,7 @@ pdfToImage({
   console.log(image);
 })
 ```
+
+
+## demo
+[![Edit pdf-to-image](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/pdf-to-image-2wrepn?fontsize=14&hidenavigation=1&theme=dark)
